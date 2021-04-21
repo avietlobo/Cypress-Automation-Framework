@@ -1,15 +1,15 @@
 {
   "stats": {
     "suites": 1,
-    "tests": 1,
-    "passes": 1,
+    "tests": 2,
+    "passes": 0,
     "pending": 0,
-    "failures": 0,
-    "start": "2021-04-21T12:51:06.074Z",
-    "end": "2021-04-21T12:51:11.208Z",
-    "duration": 5134,
-    "testsRegistered": 1,
-    "passPercent": 100,
+    "failures": 2,
+    "start": "2021-04-21T16:45:04.305Z",
+    "end": "2021-04-21T16:45:05.390Z",
+    "duration": 1085,
+    "testsRegistered": 2,
+    "passPercent": 0,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "9cd2939a-db1d-409d-9952-49c46a77e426",
+      "uuid": "8be385dd-2288-4c89-ac85-2e625bae39f2",
       "title": "",
       "fullFile": "cypress/integration/examples/features/ecommerce.feature",
       "file": "cypress/integration/examples/features/ecommerce.feature",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "e4d9369d-8d02-43f2-90dd-2135c813b89b",
+          "uuid": "86e7ae1e-8401-42e8-b81c-2f6f1a4ba4e2",
           "title": "End to end Ecommerce validation",
           "fullFile": "",
           "file": "",
@@ -38,29 +38,56 @@
               "title": "Ecommerce products delivery",
               "fullTitle": "End to end Ecommerce validation Ecommerce products delivery",
               "timedOut": null,
-              "duration": 2642,
-              "state": "passed",
-              "speed": "slow",
-              "pass": true,
-              "fail": false,
+              "duration": 555,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
               "pending": false,
               "context": null,
               "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
-              "err": {},
-              "uuid": "7c813c14-1084-4958-a637-f5ec5cb44539",
-              "parentUUID": "e4d9369d-8d02-43f2-90dd-2135c813b89b",
+              "err": {
+                "message": "Error: Step implementation missing for: I am on the home page",
+                "estack": "Error: Step implementation missing for: I am on the home page\n    at Context.resolveAndRunStepDefinition (http://localhost:56144/__cypress/tests?p=cypress\\integration\\examples\\features\\ecommerce.feature:12263:11)\n    at Context.eval (http://localhost:56144/__cypress/tests?p=cypress\\integration\\examples\\features\\ecommerce.feature:11603:35)",
+                "diff": null
+              },
+              "uuid": "5f30982e-5042-4d98-b90f-abd88b4b828a",
+              "parentUUID": "86e7ae1e-8401-42e8-b81c-2f6f1a4ba4e2",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Ecommerce fill form",
+              "fullTitle": "End to end Ecommerce validation Ecommerce fill form",
+              "timedOut": null,
+              "duration": 445,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "Error: Step implementation missing for: I am on the home page",
+                "estack": "Error: Step implementation missing for: I am on the home page\n    at Context.resolveAndRunStepDefinition (http://localhost:56144/__cypress/tests?p=cypress\\integration\\examples\\features\\ecommerce.feature:12263:11)\n    at Context.eval (http://localhost:56144/__cypress/tests?p=cypress\\integration\\examples\\features\\ecommerce.feature:11603:35)",
+                "diff": null
+              },
+              "uuid": "748c1260-8144-49ed-88a5-601c047827a9",
+              "parentUUID": "86e7ae1e-8401-42e8-b81c-2f6f1a4ba4e2",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
-          "passes": [
-            "7c813c14-1084-4958-a637-f5ec5cb44539"
+          "passes": [],
+          "failures": [
+            "5f30982e-5042-4d98-b90f-abd88b4b828a",
+            "748c1260-8144-49ed-88a5-601c047827a9"
           ],
-          "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 2642,
+          "duration": 1000,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

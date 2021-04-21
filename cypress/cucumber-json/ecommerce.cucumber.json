@@ -27,7 +27,7 @@
             "name": "I am on the home page",
             "result": {
               "status": "passed",
-              "duration": 933000000
+              "duration": 545000000
             }
           },
           {
@@ -37,7 +37,7 @@
             "name": "I navigate to the shop page",
             "result": {
               "status": "passed",
-              "duration": 2373000000
+              "duration": 2046000000
             }
           },
           {
@@ -47,7 +47,7 @@
             "name": "the shop is displayed successfully",
             "result": {
               "status": "passed",
-              "duration": 175000000
+              "duration": 64000000
             }
           }
         ]
@@ -67,7 +67,7 @@
             "name": "I am on the home page",
             "result": {
               "status": "passed",
-              "duration": 577000000
+              "duration": 213000000
             }
           },
           {
@@ -77,7 +77,7 @@
             "name": "I fill the user form",
             "result": {
               "status": "passed",
-              "duration": 1209000000
+              "duration": 836000000
             }
           },
           {
@@ -87,7 +87,7 @@
             "name": "I see the form got submitted successfully",
             "result": {
               "status": "passed",
-              "duration": 114000000
+              "duration": 39000000
             }
           }
         ]

@@ -1,8 +1,8 @@
 /// <reference types="cypress" />
 import { Given, Then, When } from "cypress-cucumber-preprocessor/steps";
 import { before } from "mocha";
-import { HomePage } from '../../../../support/pages/HomePage'
-import { ShopPage } from '../../../../support/pages/ShopPage'
+import { HomePage } from '../pages/HomePage'
+import { ShopPage } from '../pages/ShopPage'
 let homePage
 let shopPage
 before(() => {
