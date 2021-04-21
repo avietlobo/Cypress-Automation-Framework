@@ -1,0 +1,13 @@
+{
+  "env": {
+    "url": "https://rahulshettyacademy.com/angularpractice/"
+  },
+  "projectId": "ki86xx",
+  "reporter": "mochawesome",
+  "retries": {
+      "runMode": 0,
+      "openMode": 0
+    },
+    "testFiles": "**/*.feature"
+  
+}

@@ -1,0 +1,35 @@
+{
+  "name": "CypressAutomationFramework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "mochatest": ".\\node_modules\\.bin\\cypress run --spec cypress\\integration\\examples\\mocha.spec",
+    "head:mochatest": "npm run test -- --headed",
+    "recordDashboardMochaTest": "npm run test -- --record --key ec039117-cd1b-44e2-be3f-4000395214ee",
+    "testWithMochareport": "npm run test -- --reporter mochawesome",
+    "features:headless": ".\\node_modules\\.bin\\cypress run --spec cypress\\integration\\examples\\features\\ecommerce.feature",
+    "features:headfull": "npm run features:headless -- --headed",
+    "features:recorded": "npm run features:headless --record --key ec039117-cd1b-44e2-be3f-4000395214ee"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cucumber-html-reporter": "^5.4.0",
+    "cypress": "^7.1.0",
+    "cypress-cucumber-preprocessor": "^4.0.3",
+    "mocha": "^8.3.2",
+    "mochawesome": "^6.2.2",
+    "multiple-cucumber-html-reporter": "^1.18.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
+  }
+}
